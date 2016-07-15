@@ -10,7 +10,7 @@
     "start": "node ./bin/www",
     "test": "mocha --compilers js:babel-register --require ./__test/testHelper.js '__test/**/*.spec.js'",
     "check-style-js": "standard --verbose | snazzy",
-    "check-style-css": "stylelint {shared,client}/**/*.css --verbose; exit 0",
+    "check-style-css": "stylelint \"{shared,client}/**/*.css\" --verbose; exit 0",
     "postinstall": "gulp"
   },
   "dependencies": {
