@@ -4,11 +4,11 @@ import { connect } from 'react-redux'
 import { switchLocale } from '../lib/react-intl-redux'
 import PureRenderMixin from 'react-addons-pure-render-mixin'
 
-import AppBar from 'material-ui/lib/app-bar'
-import IconButton from 'material-ui/lib/icon-button'
-import IconMenu from 'material-ui/lib/menus/icon-menu'
-import LanguageIcon from 'material-ui/lib/svg-icons/action/language'
-import MenuItem from 'material-ui/lib/menus/menu-item'
+import AppBar from 'material-ui/AppBar'
+import IconButton from 'material-ui/IconButton'
+import IconMenu from 'material-ui/IconMenu'
+import MenuItem from 'material-ui/MenuItem'
+import LanguageIcon from 'material-ui/svg-icons/action/language'
 import { injectIntl, intlShape, FormattedMessage } from 'react-intl'
 
 @connect(

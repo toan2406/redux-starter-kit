@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react'
-import RefreshIndicator from 'material-ui/lib/refresh-indicator'
+import RefreshIndicator from 'material-ui/RefreshIndicator'
 let delay = 500
 
 const loader = <RefreshIndicator

@@ -2,8 +2,8 @@ import React, { Component, PropTypes } from 'react'
 import { switchLocale } from '../lib/react-intl-redux'
 import RouteCSSTransitionGroup from './RouteCSSTransitionGroup'
 import injectTapEventPlugin from 'react-tap-event-plugin'
-import getMuiTheme from 'material-ui/lib/styles/getMuiTheme'
-import themeDecorator from 'material-ui/lib/styles/theme-decorator'
+import getMuiTheme from 'material-ui/styles/getMuiTheme'
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import Header from './Header'
 import Nav from './Nav'
 
@@ -28,10 +28,11 @@ const setDefaultLocale = locale => target => {
   ]
 }
 
+const muiTheme = getMuiTheme(null, {
+  userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Safari/537.36'
+})
+
 @setDefaultLocale('vi')
-@themeDecorator(getMuiTheme(null, {
-  userAgent: 'all'
-}))
 class App extends Component {
   static propTypes = {
     children: PropTypes.object,
@@ -63,23 +64,25 @@ class App extends Component {
 
   render () {
     return (
-      <div>
-        <Header
-          onMenuIconTouchTap={this._handleTouchTapMenuIcon}
-        />
+      <MuiThemeProvider muiTheme={muiTheme}>
+        <div>
+          <Header
+            onMenuIconTouchTap={this._handleTouchTapMenuIcon}
+          />
 
-        <Nav
-          open={this.state.openNav}
-          onRequestChange={this._handleNavRequestChange}
-        />
+          <Nav
+            open={this.state.openNav}
+            onRequestChange={this._handleNavRequestChange}
+          />
 
-        <RouteCSSTransitionGroup
-          component='div' transitionName='page'
-          transitionEnterTimeout={500} transitionLeaveTimeout={250}
-        >
-          {this.props.children}
-        </RouteCSSTransitionGroup>
-      </div>
+          <RouteCSSTransitionGroup
+            component='div' transitionName='page'
+            transitionEnterTimeout={500} transitionLeaveTimeout={250}
+          >
+            {this.props.children}
+          </RouteCSSTransitionGroup>
+        </div>
+      </MuiThemeProvider>
     )
   }
 }
