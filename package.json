@@ -61,7 +61,7 @@
     "react-addons-pure-render-mixin": "^15.0.0",
     "react-addons-test-utils": "^15.0.0",
     "react-dom": "^15.0.0",
-    "react-flexbox-grid": "^0.9.6",
+    "react-flexbox-grid": "^0.10.2",
     "react-intl": "^2.0.0-rc-1",
     "react-redux": "^4.4.0",
     "react-router": "^2.0.0-rc6",

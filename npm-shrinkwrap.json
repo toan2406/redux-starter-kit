@@ -5126,9 +5126,9 @@
       "resolved": "https://registry.npmjs.org/react-event-listener/-/react-event-listener-0.2.1.tgz"
     },
     "react-flexbox-grid": {
-      "version": "0.9.6",
-      "from": "react-flexbox-grid@0.9.6",
-      "resolved": "https://registry.npmjs.org/react-flexbox-grid/-/react-flexbox-grid-0.9.6.tgz"
+      "version": "0.10.2",
+      "from": "react-flexbox-grid@*",
+      "resolved": "https://registry.npmjs.org/react-flexbox-grid/-/react-flexbox-grid-0.10.2.tgz"
     },
     "react-intl": {
       "version": "2.1.2",
