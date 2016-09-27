@@ -4,9 +4,9 @@ import { connect } from 'react-redux'
 import { push } from 'react-router-redux'
 import PureRenderMixin from 'react-addons-pure-render-mixin'
 
-import Menu from 'material-ui/lib/menus/menu'
-import MenuItem from 'material-ui/lib/menus/menu-item'
-import LeftNav from 'material-ui/lib/left-nav'
+import Menu from 'material-ui/Menu'
+import MenuItem from 'material-ui/MenuItem'
+import Drawer from 'material-ui/Drawer'
 
 @connect(
   null,
@@ -39,17 +39,17 @@ class Nav extends Component {
 
   render () {
     return (
-      <LeftNav
+      <Drawer
         docked={false}
         width={200}
         open={this.props.open}
         onRequestChange={this._handleRequestChange}
       >
-        <Menu onChange={this._handleMenuChange} zDepth={0}>
+        <Menu onChange={this._handleMenuChange}>
           <MenuItem value='/'>Home</MenuItem>
           <MenuItem value='/about'>About</MenuItem>
         </Menu>
-      </LeftNav>
+      </Drawer>
     )
   }
 }

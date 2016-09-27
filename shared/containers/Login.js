@@ -2,7 +2,7 @@ import React, { Component, PropTypes } from 'react'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import * as UserActions from '../actions/user'
-import RaisedButton from 'material-ui/lib/raised-button'
+import RaisedButton from 'material-ui/raisedButton'
 
 @connect(
   null,

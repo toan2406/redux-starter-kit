@@ -24,7 +24,7 @@ describe('Image', () => {
 
     ImageComponent.__set__('window.Image', ImageMock)
     renderIntoDocument(
-      <ImageComponent src='image.png' onLoad={handleLoad} />
+      <ImageComponent src='image.png' onLoad={handleLoad} loader={<div>Loading...</div>} />
     )
   })
 })
