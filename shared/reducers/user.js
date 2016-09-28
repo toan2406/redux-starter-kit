@@ -7,7 +7,9 @@ const INITIAL_STATE = Map({
 export default function userReducer (state = INITIAL_STATE, action) {
   switch (action.type) {
     case 'GET_USER_SUCCESS':
-      return state.merge(action.result)
+      return state.merge({
+        currentUser: action.result
+      })
 
     default:
       return state
