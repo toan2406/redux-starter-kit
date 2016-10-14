@@ -3,6 +3,7 @@ import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import { routeActions } from 'react-router-redux'
 import * as PostActions from '../actions/post'
+import * as UserActions from '../actions/user'
 import ImageComponent from '../components/Image'
 import ListComponent from '../components/List'
 import { Grid, Row, Col } from 'react-flexbox-grid'
@@ -11,6 +12,7 @@ import { Grid, Row, Col } from 'react-flexbox-grid'
   state => ({ post: state.post }),
   dispatch => ({
     actions: bindActionCreators(PostActions, dispatch),
+    userActions: bindActionCreators(UserActions, dispatch),
     router: bindActionCreators(routeActions, dispatch)
   })
 )
@@ -18,6 +20,7 @@ class Home extends Component {
   static propTypes = {
     post: PropTypes.object.isRequired,
     actions: PropTypes.object.isRequired,
+    userActions: PropTypes.object.isRequired,
     router: PropTypes.object.isRequired
   };
   static contextTypes = {

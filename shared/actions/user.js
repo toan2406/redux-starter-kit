@@ -8,3 +8,16 @@ export function login () {
     }, 3000)
   }
 }
+
+export function fetchUsers () {
+  return {
+    type: 'FETCH_USERS'
+  }
+}
+
+export function fetchOneUser ({ name }) {
+  return {
+    type: 'FETCH_ONE_USER',
+    payload: name
+  }
+}

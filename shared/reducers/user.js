@@ -11,6 +11,11 @@ export default function userReducer (state = INITIAL_STATE, action) {
         currentUser: action.result
       })
 
+    case 'FETCH_ONE_USER_FULFILLED':
+      return state.merge({
+        selectedUser: action.payload
+      })
+
     default:
       return state
   }
