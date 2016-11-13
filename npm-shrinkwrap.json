@@ -1407,7 +1407,8 @@
       "dependencies": {
         "assert-plus": {
           "version": "1.0.0",
-          "from": "assert-plus@>=1.0.0 <2.0.0"
+          "from": "assert-plus@1.0.0",
+          "resolved": "https://registry.npmjs.org/assert-plus/-/assert-plus-1.0.0.tgz"
         }
       }
     },
@@ -1767,7 +1768,8 @@
         },
         "espree": {
           "version": "2.2.5",
-          "from": "espree@>=2.2.4 <3.0.0"
+          "from": "espree@2.2.5",
+          "resolved": "https://registry.npmjs.org/espree/-/espree-2.2.5.tgz"
         },
         "strip-json-comments": {
           "version": "0.1.3",
@@ -2013,7 +2015,8 @@
         },
         "depd": {
           "version": "1.1.0",
-          "from": "depd@>=1.1.0 <1.2.0"
+          "from": "depd@1.1.0",
+          "resolved": "https://registry.npmjs.org/depd/-/depd-1.1.0.tgz"
         }
       }
     },
@@ -2074,7 +2077,8 @@
         },
         "object-assign": {
           "version": "4.1.0",
-          "from": "object-assign@>=4.1.0 <5.0.0"
+          "from": "object-assign@4.1.0",
+          "resolved": "https://registry.npmjs.org/object-assign/-/object-assign-4.1.0.tgz"
         },
         "promise": {
           "version": "7.1.1",
@@ -3566,7 +3570,8 @@
       "dependencies": {
         "nopt": {
           "version": "3.0.6",
-          "from": "nopt@>=3.0.1 <3.1.0"
+          "from": "nopt@3.0.6",
+          "resolved": "https://registry.npmjs.org/nopt/-/nopt-3.0.6.tgz"
         }
       }
     },
@@ -3599,7 +3604,8 @@
       "dependencies": {
         "acorn": {
           "version": "2.7.0",
-          "from": "acorn@>=2.4.0 <3.0.0"
+          "from": "acorn@2.7.0",
+          "resolved": "https://registry.npmjs.org/acorn/-/acorn-2.7.0.tgz"
         }
       }
     },
@@ -4285,11 +4291,13 @@
         },
         "es6-promise": {
           "version": "2.3.0",
-          "from": "es6-promise@>=2.3.0 <2.4.0"
+          "from": "es6-promise@2.3.0",
+          "resolved": "https://registry.npmjs.org/es6-promise/-/es6-promise-2.3.0.tgz"
         },
         "postcss": {
           "version": "4.1.16",
-          "from": "postcss@>=4.1.16 <5.0.0"
+          "from": "postcss@4.1.16",
+          "resolved": "https://registry.npmjs.org/postcss/-/postcss-4.1.16.tgz"
         },
         "source-map": {
           "version": "0.4.4",
@@ -4335,7 +4343,8 @@
           "dependencies": {
             "minimatch": {
               "version": "2.0.10",
-              "from": "minimatch@>=2.0.1 <3.0.0"
+              "from": "minimatch@2.0.10",
+              "resolved": "https://registry.npmjs.org/minimatch/-/minimatch-2.0.10.tgz"
             }
           }
         },
@@ -5176,7 +5185,8 @@
       "dependencies": {
         "asap": {
           "version": "2.0.4",
-          "from": "asap@>=2.0.3 <2.1.0"
+          "from": "asap@2.0.4",
+          "resolved": "https://registry.npmjs.org/asap/-/asap-2.0.4.tgz"
         },
         "fbjs": {
           "version": "0.2.1",
@@ -5319,6 +5329,11 @@
       "version": "2.6.1",
       "from": "redux-logger@>=2.5.0 <3.0.0",
       "resolved": "https://registry.npmjs.org/redux-logger/-/redux-logger-2.6.1.tgz"
+    },
+    "redux-observable": {
+      "version": "0.12.1",
+      "from": "redux-observable@*",
+      "resolved": "https://registry.npmjs.org/redux-observable/-/redux-observable-0.12.1.tgz"
     },
     "redux-thunk": {
       "version": "2.0.1",
@@ -5642,6 +5657,18 @@
       "from": "rx-lite@>=3.1.2 <4.0.0",
       "resolved": "https://registry.npmjs.org/rx-lite/-/rx-lite-3.1.2.tgz"
     },
+    "rxjs": {
+      "version": "5.0.0-rc.1",
+      "from": "rxjs@*",
+      "resolved": "https://registry.npmjs.org/rxjs/-/rxjs-5.0.0-rc.1.tgz",
+      "dependencies": {
+        "symbol-observable": {
+          "version": "1.0.3",
+          "from": "symbol-observable@>=1.0.1 <2.0.0",
+          "resolved": "https://registry.npmjs.org/symbol-observable/-/symbol-observable-1.0.3.tgz"
+        }
+      }
+    },
     "samsam": {
       "version": "1.1.2",
       "from": "samsam@1.1.2",
@@ -5835,7 +5862,8 @@
           "dependencies": {
             "amdefine": {
               "version": "1.0.0",
-              "from": "amdefine@>=0.0.4"
+              "from": "amdefine@1.0.0",
+              "resolved": "https://registry.npmjs.org/amdefine/-/amdefine-1.0.0.tgz"
             }
           }
         }

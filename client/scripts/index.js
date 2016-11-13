@@ -14,7 +14,7 @@ require.context('../images', false, /^.*$/)
 // expose perf tool
 import 'react-addons-perf'
 
-import './registerServiceWorker'
+// import './registerServiceWorker'
 
 const { pathname, search, hash } = window.location
 const location = `${pathname}${search}${hash}`

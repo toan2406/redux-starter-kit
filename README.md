@@ -7,6 +7,8 @@
 [![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
 [![forthebadge](http://forthebadge.com/images/badges/no-ragrets.svg)](http://forthebadge.com)
 
+<img src="logos.jpg" alt="Logos" width="499" />
+
 ## Overview
 
 Redux Starter Kit is a boilerplate for SPA development.
@@ -20,7 +22,7 @@ Redux Starter Kit is a boilerplate for SPA development.
 * Built-in HTTP server
 * Performance optimization
 * Offline support
- 
+
 ## Quickstart
 
 Install dependencies
